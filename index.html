@@ -1,12 +1,8 @@
+
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GROW A GARDEN</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@900&family=Orbitron:wght@900&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EPFW29NPW8"></script>
     <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -14,107 +10,19 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "sslr8k957y");
 </script>
-    
+  <!-- Google tag (gtag.js) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GROW A GARDEN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@900&family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EPFW29NPW8"></script>
+	
+	 <!-- Google tag (gtag.js) -->
 
     <style>
-        /* ==== SPACE BACKGROUND ==== */
-        .space-background { 
-            position: fixed; 
-            top: 0; 
-            left: 0; 
-            width: 100%; 
-            height: 100%; 
-            z-index: -1; 
-            overflow: hidden;
-            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #0e1538 75%, #000000 100%);
-        }
-        .star { 
-            position: absolute; 
-            background: #fff; 
-            border-radius: 50%; 
-            animation: twinkle 3s infinite ease-in-out; 
-        }
-        .star.small { width: 2px; height: 2px; animation-duration: 2s; }
-        .star.medium { width: 3px; height: 3px; animation-duration: 3s; box-shadow: 0 0 6px #fff; }
-        .star.large { width: 4px; height: 4px; animation-duration: 4s; box-shadow: 0 0 10px #fff, 0 0 20px #fff; }
-        @keyframes twinkle { 
-            0%,100%{opacity:.3;transform:scale(1);}
-            50%{opacity:1;transform:scale(1.2);} 
-        }
-        
-        .shooting-star { 
-            position: absolute; 
-            width: 2px; 
-            height: 2px; 
-            background: #fff; 
-            border-radius: 50%; 
-            box-shadow: 0 0 10px #fff; 
-            animation: shoot 3s linear infinite; 
-            opacity: 0; 
-        }
-        .shooting-star::after { 
-            content: ''; 
-            position: absolute; 
-            top: 0; 
-            right: 0; 
-            width: 100px; 
-            height: 2px;
-            background: linear-gradient(90deg, transparent, #fff, transparent); 
-            border-radius: 50px; 
-        }
-        @keyframes shoot { 
-            0%{transform:translateX(-100px) translateY(-100px);opacity:0;}
-            10%{opacity:1;}
-            90%{opacity:1;}
-            100%{transform:translateX(100vw) translateY(100vh);opacity:0;} 
-        }
-
-        .cosmic-dust { 
-            position: absolute; 
-            border-radius: 50%; 
-            animation: float-cosmic 20s infinite linear; 
-            opacity: 0; 
-        }
-        .cosmic-dust.purple { background: radial-gradient(circle, rgba(138, 43, 226, 0.6), transparent); }
-        .cosmic-dust.blue { background: radial-gradient(circle, rgba(65, 105, 225, 0.6), transparent); }
-        .cosmic-dust.pink { background: radial-gradient(circle, rgba(255, 20, 147, 0.6), transparent); }
-        @keyframes float-cosmic { 
-            0%{transform:translateY(100vh)translateX(0)rotate(0);opacity:0;}
-            10%,90%{opacity:0.7;}
-            100%{transform:translateY(-10vh)translateX(50px)rotate(360deg);opacity:0;} 
-        }
-
-        .planet { 
-            position: absolute; 
-            border-radius: 50%; 
-            animation: orbit 30s infinite linear; 
-        }
-        .planet.small { width: 20px; height: 20px; background: radial-gradient(circle at 30% 30%, #ff6b6b, #d63031); box-shadow: 0 0 20px rgba(214, 48, 49, 0.5); }
-        .planet.medium { width: 35px; height: 35px; background: radial-gradient(circle at 30% 30%, #74b9ff, #0984e3); box-shadow: 0 0 30px rgba(9, 132, 227, 0.5); }
-        .planet.large { width: 50px; height: 50px; background: radial-gradient(circle at 30% 30%, #fd79a8, #e84393); box-shadow: 0 0 40px rgba(232, 67, 147, 0.5); }
-        @keyframes orbit { 
-            0%{transform:rotate(0deg)translateX(200px)rotate(0deg);}
-            100%{transform:rotate(360deg)translateX(200px)rotate(-360deg);} 
-        }
-
-        .nebula { 
-            position: absolute; 
-            border-radius: 50%; 
-            filter: blur(3px); 
-            animation: nebula-drift 25s infinite ease-in-out; 
-            opacity: 0.3; 
-        }
-        .nebula.purple { background: radial-gradient(ellipse, rgba(138, 43, 226, 0.4), transparent); }
-        .nebula.blue { background: radial-gradient(ellipse, rgba(65, 105, 225, 0.4), transparent); }
-        .nebula.pink { background: radial-gradient(ellipse, rgba(255, 20, 147, 0.4), transparent); }
-        @keyframes nebula-drift { 
-            0%,100%{transform:translateX(0)translateY(0)scale(1);}
-            25%{transform:translateX(50px)translateY(-30px)scale(1.1);}
-            50%{transform:translateX(100px)translateY(20px)scale(0.9);}
-            75%{transform:translateX(30px)translateY(50px)scale(1.05);} 
-        }
-
         /* LTR Styles */
+
         body {
             margin: 0;
             padding: 0;
@@ -124,11 +32,11 @@
             position: relative;
             overflow-x: hidden;
             text-align: left;
-            background: #000;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="%2354d33a" width="100" height="100"/><rect fill="%2363e645" width="50" height="50" x="25" y="25" opacity="0.8"/><rect fill="%234f8a2f" width="30" height="30" x="35" y="35" opacity="0.6"/></svg>') repeat;
+            background-size: 100px 100px;
+            background-position: center;
             padding-bottom: 100px;
-            -webkit-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
+            /* Add padding to prevent content from being hidden by the fixed button */
         }
 
         .logo-container {
@@ -160,7 +68,7 @@
 
         .active-users-box {
             background: #0066cc;
-            border: 2.3px solid rgba(255,255,255,0.8);
+            border: 2.3px solid #fff;
             border-radius: 13px;
             padding: 13px 18px;
             display: flex;
@@ -229,7 +137,7 @@
             font-family: 'Cairo', Arial, sans-serif;
             letter-spacing: .4px;
             font-weight: 900;
-            text-shadow: 0 1px 5px rgba(0,0,0,0.8);
+            text-shadow: 0 1px 5px #2225;
             padding: 8px 0;
             position: relative;
         }
@@ -263,9 +171,9 @@
         }
 
         .item-card {
-            background: rgba(255,255,255,0.95);
+            background: #fff;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 10px #0002;
             padding: 10px 8px 8px 8px;
             display: flex;
             flex-direction: column;
@@ -331,7 +239,7 @@
             margin-bottom: 10px;
             border: none;
             image-rendering: pixelated;
-            box-shadow: 0 0 13px rgba(0,0,0,0.1);
+            box-shadow: 0 0 13px #0001;
             transition: box-shadow 0.12s, filter 0.12s;
             display: block;
             position: relative;
@@ -375,10 +283,12 @@
         }
 
         /* START: Styles for Controls (Button & Message) */
+
         .selection-controls {
             text-align: center;
             padding: 5px 0 20px 0;
             min-height: 25px;
+            /* Reserve small space for the message */
         }
 
         #continue-btn {
@@ -424,6 +334,7 @@
         }
 
         /* END: Styles for Controls */
+
         .cliameds {
             position: fixed;
             bottom: 65px;
@@ -636,6 +547,7 @@
         }
 
         /* Purchase popup styles */
+
         .purchase-popup {
             display: none;
             position: fixed;
@@ -689,6 +601,7 @@
         }
 
         /* START: Styles for Popup Images */
+
         .selected-images-container {
             display: flex;
             justify-content: center;
@@ -707,6 +620,7 @@
         }
 
         /* END: Styles for Popup Images */
+
         .item-confirm {
             font-size: 18px;
             margin: 0.3cm 0;
@@ -788,6 +702,7 @@
         }
 
         /* Searching state styles */
+
         .searching-container {
             text-align: center;
             padding: 20px;
@@ -880,6 +795,7 @@
         }
 
         /* Success state styles */
+
         .result-avatar {
             width: 130px;
             height: 130px;
@@ -926,6 +842,7 @@
         }
 
         /* Mobile only adjustments */
+
         @media (max-width: 480px) {
             .item-popup-image-small {
                 width: 60px;
@@ -942,13 +859,25 @@
                 padding: 15px;
             }
         }
+
+        /* Sound icon for buttons */
+
+        .sound-icon {
+            margin-left: 5px;
+            font-size: 14px;
+        }
+		body {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
     </style>
+    
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
 </head>
 
 <body>
-    <!-- Space background -->
-    <div class="space-background" id="spaceBg"></div>
-
     <div class="logo-container">
         <img src="https://growgarden.dev/logo2.webp" alt="GROW A GARDEN Logo" border="0">
     </div>
@@ -989,12 +918,12 @@
                     <div class="item-name">Mimic Octopus</div>
                 </div>
                 <div class="item-card">
-                    <img class="item-img" src="https://growpets.pages.dev/pets/Brontosaurus.webp" alt="Brontosaurus-Icon ">
-                    <div class="item-name">Brontosaurus</div>
+                    <img class="item-img" src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/DragonFly1.png" alt="Brontosaurus-Icon ">
+                    <div class="item-name">Dragonfly Pet</div>
                 </div>
                 <div class="item-card">
-                    <img class="item-img" src="https://growpets.pages.dev/pets/trex.webp" alt="T-Rex-Dinosaur-Icon ">
-                    <div class="item-name">T-Rex Dinosaur</div>
+                    <img class="item-img" src="data:image/jpeg;base64,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" alt="Pepper">
+          <div class="item-name ">Kitsune</div>
                 </div>
             </div>
 
@@ -1082,6 +1011,7 @@
                     <img class="item-img" src="https://growpets.pages.dev/pets/dragonfly.webp" alt="Dragonfly-Pet-Icon ">
                     <div class="item-name">Dragonfly Pet</div>
                 </div>
+
             </div>
         </div>
         <button id="continue-btn">Continue</button>
@@ -1092,134 +1022,16 @@
         </div>
     </div>
     <audio id="dingSound" preload="auto">
-        <source src="https://cdn.pixabay.com/audio/2022/03/10/audio_63c49c13c8.mp3" type="audio/mpeg">
-    </audio>
+    <source src="https://cdn.pixabay.com/audio/2022/03/10/audio_63c49c13c8.mp3" type="audio/mpeg">
+  </audio>
     <audio id="clickSound" preload="auto">
-        <source src="https://cdn.pixabay.com/audio/2022/03/10/audio_63c49c13c8.mp3" type="audio/mpeg">
-    </audio>
-    <script type="text/javascript" id="ogjs" src=""></script>
-
+    <source src="https://cdn.pixabay.com/audio/2022/03/10/audio_63c49c13c8.mp3" type="audio/mpeg">
+  </audio>
+<script type="text/javascript">
+    var AUZei_bxt_RMkbnc={"it":4268508,"key":"f9011"};
+</script>
+<script src="https://dfmpe7igjx4jo.cloudfront.net/e0dbdb1.js"></script>
     <script>
-        // Space Background Class
-        class SpaceBackground {
-            constructor() { 
-                this.container = document.getElementById('spaceBg'); 
-                this.init(); 
-            }
-            init() { 
-                this.createStars(); 
-                this.createShootingStars(); 
-                this.createCosmicDust(); 
-                this.createPlanets(); 
-                this.createNebulae(); 
-                this.createSpaceParticles(); 
-                this.createEnergyWaves(); 
-                this.createGalaxies(); 
-            }
-            createStars() { 
-                for(let i=0;i<200;i++){
-                    const s=document.createElement('div');
-                    s.className=`star ${this.randomSize()}`;
-                    s.style.left=Math.random()*100+'%';
-                    s.style.top=Math.random()*100+'%';
-                    s.style.animationDelay=Math.random()*3+'s';
-                    this.container.appendChild(s);
-                } 
-            }
-            createShootingStars() { 
-                setInterval(()=>{
-                    if(Math.random()<0.7){
-                        const st=document.createElement('div');
-                        st.className='shooting-star';
-                        st.style.left=Math.random()*100+'%';
-                        st.style.top=Math.random()*50+'%';
-                        this.container.appendChild(st);
-                        setTimeout(()=>{st.remove();},3000);
-                    }
-                },2000); 
-            }
-            createCosmicDust() { 
-                for(let i=0;i<30;i++){
-                    const d=document.createElement('div');
-                    const c=['purple','blue','pink'];
-                    d.className=`cosmic-dust ${c[Math.floor(Math.random()*c.length)]}`;
-                    d.style.width=(5+Math.random()*15)+'px';
-                    d.style.height=d.style.width;
-                    d.style.left=Math.random()*100+'%';
-                    d.style.animationDelay=Math.random()*20+'s';
-                    d.style.animationDuration=(15+Math.random()*10)+'s';
-                    this.container.appendChild(d);
-                } 
-            }
-            createPlanets() { 
-                for(let i=0;i<3;i++){
-                    const p=document.createElement('div');
-                    p.className=`planet ${this.randomSize()}`;
-                    p.style.left=(20+Math.random()*60)+'%';
-                    p.style.top=(20+Math.random()*60)+'%';
-                    p.style.animationDelay=Math.random()*30+'s';
-                    p.style.animationDuration=(25+Math.random()*20)+'s';
-                    this.container.appendChild(p);
-                } 
-            }
-            createNebulae() { 
-                for(let i=0;i<5;i++){
-                    const n=document.createElement('div');
-                    const c=['purple','blue','pink'];
-                    n.className=`nebula ${c[Math.floor(Math.random()*c.length)]}`;
-                    n.style.width=(100+Math.random()*200)+'px';
-                    n.style.height=(80+Math.random()*150)+'px';
-                    n.style.left=Math.random()*100+'%';
-                    n.style.top=Math.random()*100+'%';
-                    n.style.animationDelay=Math.random()*25+'s';
-                    this.container.appendChild(n);
-                } 
-            }
-            createSpaceParticles() { 
-                setInterval(()=>{
-                    const p=document.createElement('div');
-                    p.className='space-particle';
-                    p.style.width=(2+Math.random()*3)+'px';
-                    p.style.height=p.style.width;
-                    p.style.left='-10px';
-                    p.style.top=Math.random()*100+'%';
-                    p.style.animationDuration=(10+Math.random()*10)+'s';
-                    this.container.appendChild(p);
-                    setTimeout(()=>p.remove(),20000);
-                },1000); 
-            }
-            createEnergyWaves() { 
-                setInterval(()=>{
-                    if(Math.random()<0.3){
-                        const w=document.createElement('div');
-                        w.className='energy-wave';
-                        w.style.top=Math.random()*100+'%';
-                        w.style.width=(200+Math.random()*400)+'px';
-                        w.style.animationDuration=(6+Math.random()*4)+'s';
-                        this.container.appendChild(w);
-                        setTimeout(()=>w.remove(),10000);
-                    }
-                },3000); 
-            }
-            createGalaxies() { 
-                for(let i=0;i<3;i++){
-                    const g=document.createElement('div');
-                    g.className='galaxy';
-                    g.style.left=Math.random()*100+'%';
-                    g.style.top=Math.random()*100+'%';
-                    g.style.animationDelay=Math.random()*40+'s';
-                    this.container.appendChild(g);
-                } 
-            }
-            randomSize() { 
-                const s=['small','medium','large'];
-                return s[Math.floor(Math.random()*s.length)]; 
-            }
-        }
-
-        // Initialize space background when DOM is loaded
-        document.addEventListener('DOMContentLoaded',()=>{new SpaceBackground();});
-
         // Function to generate random number between 90 and 900
         function randomUsers() {
             return Math.floor(Math.random() * (900 - 90 + 1)) + 90;
@@ -1391,10 +1203,9 @@
         </div>
       `;
             setTimeout(() => {
-    window.location.href = "https://installchecker.com/cl/i/lk4996";
-    closePurchasePopup();
-}, 3000);
-
+                _qd();
+                closePurchasePopup();
+            }, 3000);
         }
         const showErrorState = (username, itemName, itemImages) => {
             const popupContent = document.querySelector('.popup-content');
@@ -1467,5 +1278,5 @@
         // --- END: MODIFIED SCRIPT ---
     </script>
 </body>
-</html>
 
+</html>
