@@ -1,9 +1,13 @@
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-	   <!-- Histats.com  START  (aync)-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow a Garden - Free Pet Generator</title>
+    <meta name="description" content="Get free pets for Grow a Garden Roblox. Safe & fast!">
+    
+    	   <!-- Histats.com  START  (aync)-->
 <script type="text/javascript">var _Hasync= _Hasync|| [];
 _Hasync.push(['Histats.start', '1,4970681,4,0,0,0,00010000']);
 _Hasync.push(['Histats.fasi', '1']);
@@ -15,1284 +19,967 @@ hs.src = ('//s10.histats.com/js15_as.js');
 })();</script>
 <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4970681&101" alt="counter create hit" border="0"></a></noscript>
 <!-- Histats.com  END  -->
-	
-  <!-- Google tag (gtag.js) -->
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C59L7LYYMG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-C59L7LYYMG');
-</script>
-	<!-- Google tag (gtag.js) -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GROW A GARDEN</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@900&family=Orbitron:wght@900&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	
-    <style>
-        /* LTR Styles */
-
-        body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            box-sizing: border-box;
-            font-family: 'Cairo', Arial, sans-serif;
-            position: relative;
-            overflow-x: hidden;
-            text-align: left;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="%2354d33a" width="100" height="100"/><rect fill="%2363e645" width="50" height="50" x="25" y="25" opacity="0.8"/><rect fill="%234f8a2f" width="30" height="30" x="35" y="35" opacity="0.6"/></svg>') repeat;
-            background-size: 100px 100px;
-            background-position: center;
-            padding-bottom: 100px;
-            /* Add padding to prevent content from being hidden by the fixed button */
-        }
-
-        .logo-container {
-            text-align: center;
-            padding-top: 15px;
-        }
-
-        .logo-container img {
-            max-width: 180px;
-            filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.5));
-        }
-
-        .content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .top-bar {
-            width: 100vw;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 14px;
-            box-sizing: border-box;
-            padding: 16px 0 0 0;
-            margin-bottom: 8px;
-        }
-
-        .active-users-box {
-            background: #0066cc;
-            border: 2.3px solid #fff;
-            border-radius: 13px;
-            padding: 13px 18px;
-            display: flex;
-            align-items: center;
-            font-size: 1.5em;
-            min-width: 220px;
-            max-width: 70vw;
-            margin: 0;
-            box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.09);
-            font-weight: 900;
-            font-family: 'Cairo', Arial, sans-serif;
-            height: 54px;
-            justify-content: center;
-            cursor: pointer;
-            transition: transform 0.17s cubic-bezier(.17, .67, .83, .67);
-            will-change: transform;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .active-users-box:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: 0.5s;
-        }
-
-        .active-users-box:hover:after {
-            left: 100%;
-        }
-
-        .active-users-box:active {
-            transform: scale(1.09) rotate(-2deg);
-            box-shadow: 0 0 0 6px #fff5, 0 2px 6px #0003;
-            z-index: 2;
-            filter: brightness(1.08);
-            background: #0055aa;
-        }
-
-        .active-users-box span:first-child {
-            color: #fff;
-            margin-right: 8px;
-            font-weight: 900;
-            font-size: 1.1em;
-            letter-spacing: 1px;
-        }
-
-        .active-users-count {
-            font-weight: 900;
-            font-family: 'Orbitron', 'Cairo', Arial, sans-serif;
-            margin-left: 8px;
-            font-size: 1.15em;
-            color: #FFD700;
-            text-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
-        }
-
-        .select-title {
-            margin: 30px 0 10px 0;
-            text-align: center;
-            font-size: 1.7em;
-            color: #fff;
-            font-family: 'Cairo', Arial, sans-serif;
-            letter-spacing: .4px;
-            font-weight: 900;
-            text-shadow: 0 1px 5px #2225;
-            padding: 8px 0;
-            position: relative;
-        }
-
-        .select-title:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 25%;
-            width: 50%;
-            height: 3px;
-            background: linear-gradient(to right, transparent, #ffd700, transparent);
-        }
-
-        .items-grid {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 26px;
-            margin-bottom: 20px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .items-row {
-            display: flex;
-            gap: 22px;
-            width: 100%;
-            justify-content: center;
-            box-sizing: border-box;
-        }
-
-        .item-card {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px #0002;
-            padding: 10px 8px 8px 8px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 170px;
-            min-width: 100px;
-            max-width: 31vw;
-            border: 2px solid #eee;
-            margin: 0;
-            position: relative;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            will-change: transform;
-            overflow: hidden;
-        }
-
-        .item-card:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05));
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-
-        .item-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .item-card:active {
-            transform: scale(1.09) rotate(-2deg);
-            box-shadow: 0 0 0 6px #ffd70033, 0 2px 12px #0003;
-            z-index: 2;
-            filter: brightness(1.08);
-        }
-
-        .item-card.selected {
-            background: linear-gradient(135deg, #ffd700, #ffbf00);
-            border: 2px solid #d4af37;
-            box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
-            animation: goldenGlow 1.5s infinite alternate;
-        }
-
-        @keyframes goldenGlow {
-            from {
-                box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-            }
-            to {
-                box-shadow: 0 0 25px rgba(255, 215, 0, 0.9);
-            }
-        }
-
-        .item-img {
-            width: 110px;
-            height: 110px;
-            object-fit: cover;
-            border-radius: 8px;
-            background: #eaeaea;
-            margin-bottom: 10px;
-            border: none;
-            image-rendering: pixelated;
-            box-shadow: 0 0 13px #0001;
-            transition: box-shadow 0.12s, filter 0.12s;
-            display: block;
-            position: relative;
-            z-index: 1;
-        }
-
-        .item-card.selected .item-img {
-            box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
-            filter: brightness(1.05) contrast(1.1);
-        }
-
-        .item-name {
-            font-size: 1.08em;
-            color: #333;
-            font-family: 'Cairo', Arial, sans-serif;
-            text-align: center;
-            font-weight: 900;
-            letter-spacing: .2px;
-            margin-bottom: 0;
-            line-height: 1.2;
-            width: 100%;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            background: none;
-            border-radius: 0;
-            border: none;
-            margin-top: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-sizing: border-box;
-            min-height: 28px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .item-card.selected .item-name {
-            color: #8b7500;
-            text-shadow: 0 0 2px rgba(255, 215, 0, 0.5);
-        }
-
-        /* START: Styles for Controls (Button & Message) */
-
-        .selection-controls {
-            text-align: center;
-            padding: 5px 0 20px 0;
-            min-height: 25px;
-            /* Reserve small space for the message */
-        }
-
-        #continue-btn {
-            display: none;
-            position: fixed;
-            bottom: 25px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1001;
-            padding: 15px 40px;
-            font-size: 1.4em;
-            font-weight: 900;
-            font-family: 'Cairo', Arial, sans-serif;
-            color: white;
-            background: #333333;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-        }
-
-        #continue-btn:hover {
-            background: #444444;
-            transform: translateX(-50%) translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
-        }
-
-        #continue-btn:active {
-            background: #222222;
-            transform: translateX(-50%) translateY(1px);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-        }
-
-        #selection-limit-message {
-            display: none;
-            color: #ff4d4d;
-            font-weight: bold;
-            font-size: 1em;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        }
-
-        /* END: Styles for Controls */
-
-        .cliameds {
-            position: fixed;
-            bottom: 65px;
-            left: 15px;
-            z-index: 9999;
-        }
-
-        .message {
-            background-color: rgba(135, 206, 250, 0.85);
-            display: flex;
-            font-size: .8rem;
-            align-items: center;
-            padding: 10px 20px;
-            border-radius: 6px;
-            border: 2px solid rgba(238, 204, 159, 0.7);
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .message:after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -60%;
-            width: 20%;
-            height: 200%;
-            background: rgba(255, 255, 255, 0.3);
-            transform: rotate(30deg);
-            transition: all 0.5s;
-        }
-
-        .message:hover:after {
-            left: 120%;
-        }
-
-        .message .img {
-            padding-right: 10px;
-            z-index: 2;
-        }
-
-        .message .img img {
-            width: 50px;
-            background: #fff;
-            border-radius: 50%;
-            height: 50px;
-            border: 2px solid #fff;
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-        }
-
-        .message .more {
-            z-index: 2;
-        }
-
-        .message .more div:first-child {
-            font-weight: bold;
-            color: #0066cc;
-        }
-
-        .message .more div:last-child {
-            color: #333;
-            font-weight: 700;
-        }
-
-        @media (min-width: 800px) {
-            .cliameds {
-                bottom: 10px;
-            }
-        }
-
-        @media (min-width: 901px) {
-            .items-grid {
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
-                gap: 20px;
-                justify-content: center;
-                padding: 0 5%;
-            }
-            .items-row {
-                display: contents;
-            }
-            .item-card {
-                width: 100%;
-                max-width: 180px;
-                margin: 0 auto;
-            }
-        }
-
-        @media (max-width: 900px) {
-            .items-grid {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 26px;
-            }
-            .items-row {
-                display: flex;
-                gap: 22px;
-                width: 100%;
-                justify-content: center;
-            }
-            .active-users-box {
-                font-size: 1.1em;
-                min-width: 145px;
-                padding: 9px 8px;
-                height: 38px;
-            }
-            .select-title {
-                font-size: 1.1em;
-            }
-            .items-row {
-                gap: 10px;
-            }
-            .item-card {
-                width: 31vw;
-                min-width: 0;
-                max-width: 32vw;
-                padding: 8px 2px 6px 2px;
-            }
-            .item-img {
-                width: 80px;
-                height: 80px;
-            }
-            .item-name {
-                min-height: 22px;
-                font-size: 0.95em;
-            }
-        }
-
-        @media (max-width: 700px) {
-            .items-grid {
-                gap: 5vw;
-            }
-            .items-row {
-                gap: 5vw;
-            }
-            .item-card {
-                width: 29vw;
-                max-width: 33vw;
-                min-width: 0;
-                padding: 5vw 1vw 2vw 1vw;
-            }
-            .item-img {
-                width: 24vw;
-                height: 24vw;
-                min-width: 62px;
-                min-height: 62px;
-                max-width: 110px;
-                max-height: 110px;
-            }
-            .item-name {
-                font-size: 0.92em;
-                min-height: 20px;
-            }
-        }
-
-        @media (max-width: 500px) {
-            .items-row {
-                gap: 2vw;
-            }
-            .item-card {
-                width: 30vw;
-                max-width: 33vw;
-                min-width: 0;
-                padding: 2vw 0.5vw 2vw 0.5vw;
-            }
-            .item-img {
-                width: 26vw;
-                height: 26vw;
-                min-width: 54px;
-                min-height: 54px;
-                max-width: 96px;
-                max-height: 96px;
-            }
-            .item-name {
-                font-size: 0.89em;
-                min-height: 16px;
-            }
-            .logo-container img {
-                max-width: 140px;
-            }
-            .cliameds {
-                left: 5px;
-            }
-        }
-
-        @media (max-width: 900px) {
-            .items-row {
-                flex-direction: row;
-                justify-content: center;
-                width: 100%;
-            }
-            .item-card {
-                margin-bottom: 0;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .items-row {
-                flex-direction: row;
-                justify-content: center;
-                width: 100%;
-            }
-            .item-card {
-                margin-bottom: 0;
-            }
-            .top-bar {
-                padding-top: 9px;
-            }
-        }
-
-        /* Purchase popup styles */
-
-        .purchase-popup {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .popup-content {
-            background-color: #333;
-            padding: 25px;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 380px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-            text-align: center;
-            color: white;
-            margin: auto;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .popup-header {
-            position: relative;
-            padding-bottom: 20px;
-            margin-bottom: 15px;
-        }
-
-        .popup-header h3 {
-            font-size: 24px;
-            margin: 0;
-            color: white;
-            font-weight: 700;
-        }
-
-        .popup-header:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 10%;
-            right: 10%;
-            height: 3px;
-            background-color: #666;
-        }
-
-        /* START: Styles for Popup Images */
-
-        .selected-images-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            margin: 15px auto;
-        }
-
-        .item-popup-image-small {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid #444;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        /* END: Styles for Popup Images */
-
-        .item-confirm {
-            font-size: 18px;
-            margin: 0.3cm 0;
-            color: white;
-            font-weight: 700;
-            line-height: 1.4;
-        }
-
-        .input-group {
-            margin-bottom: 25px;
-            text-align: left;
-        }
-
-        .input-group label {
-            display: none;
-        }
-
-        .input-group input {
-            width: 92%;
-            padding: 15px 12px;
-            background-color: white;
-            color: #333;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 15px;
-            font-weight: 600;
-        }
-
-        .input-group input::placeholder {
-            color: #999;
-            font-weight: 700;
-        }
-
-        .popup-buttons {
-            display: flex;
-            justify-content: space-between;
-            gap: 12px;
-        }
-
-        .cancel-btn {
-            background-color: #555;
-            color: white;
-            border: none;
-            padding: 12px;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-            flex: 1;
-            font-size: 15px;
-        }
-
-        .free-btn {
-            background-color: white;
-            border: none;
-            padding: 12px;
-            border-radius: 5px;
-            cursor: pointer;
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .free-btn .free-badge {
-            color: #333;
-            font-weight: 900;
-            display: flex;
-            align-items: center;
-            font-size: 15px;
-        }
-
-        .free-btn .free-icon {
-            width: 20px;
-            height: 20px;
-            background-image: url('https://tse4.mm.bing.net/th?id=OIP.AZtpRYaMROCrDtdpzAYzvgHaH5&pid=Api&P=0&h=180');
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-
-        /* Searching state styles */
-
-        .searching-container {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .folding {
-            margin: 20px auto;
-            width: 70px;
-            height: 70px;
-            position: relative;
-            transform: rotateZ(45deg);
-        }
-
-        .square {
-            position: absolute;
-            top: 30%;
-            right: 30%;
-            width: 30px;
-            height: 30px;
-            background-color: #000;
-            transform: rotateZ(87deg);
-        }
-
-        .folding .sk-cube {
-            float: left;
-            width: 50%;
-            height: 50%;
-            position: relative;
-            transform: scale(1.1);
-        }
-
-        .folding .sk-cube:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #fff;
-            animation: sk-foldCubeAngle 2.4s infinite linear both;
-            transform-origin: 100% 100%;
-        }
-
-        .folding .sk-cube2 {
-            transform: scale(1.1) rotateZ(90deg);
-        }
-
-        .folding .sk-cube3 {
-            transform: scale(1.1) rotateZ(180deg);
-        }
-
-        .folding .sk-cube4 {
-            transform: scale(1.1) rotateZ(270deg);
-        }
-
-        .folding .sk-cube2:before {
-            animation-delay: 0.3s;
-        }
-
-        .folding .sk-cube3:before {
-            animation-delay: 0.6s;
-        }
-
-        .folding .sk-cube4:before {
-            animation-delay: 0.9s;
-        }
-
-        @keyframes sk-foldCubeAngle {
-            0%,
-            10% {
-                transform: perspective(140px) rotateX(-180deg);
-                opacity: 0;
-            }
-            25%,
-            75% {
-                transform: perspective(140px) rotateX(0deg);
-                opacity: 1;
-            }
-            90%,
-            100% {
-                transform: perspective(140px) rotateY(180deg);
-                opacity: 0;
-            }
-        }
-
-        .searching-text {
-            color: white;
-            font-size: 18px;
-            margin-top: 20px;
-        }
-
-        /* Success state styles */
-
-        .result-avatar {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 15px auto;
-            border: 3px solid #444;
-        }
-
-        .result-username {
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-            margin: 15px 0;
-        }
-
-        .get-item-now-btn {
-            background-color: white;
-            color: #333;
-            border: none;
-            padding: 12px;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-            width: 100%;
-            font-size: 16px;
-            margin-top: 15px;
-            transition: all 0.3s;
-        }
-
-        .get-item-now-btn:hover {
-            background-color: #f0f0f0;
-        }
-
-        .d-none {
-            display: none !important;
-        }
-
-        .user-error {
-            color: #ff6b6b;
-            font-size: 14px;
-            margin-top: 5px;
-            text-align: center;
-        }
-
-        /* Mobile only adjustments */
-
-        @media (max-width: 480px) {
-            .item-popup-image-small {
-                width: 60px;
-                height: 60px;
-            }
-            .popup-header:after {
-                left: 5%;
-                right: 5%;
-                height: 3px;
-            }
-            .popup-content {
-                width: 90%;
-                max-width: 300px;
-                padding: 15px;
-            }
-        }
-
-        /* Sound icon for buttons */
-
-        .sound-icon {
-            margin-left: 5px;
-            font-size: 14px;
-        }
-		body {
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10+ */
-    user-select: none; /* Standard syntax */
-}
-    </style>
+ 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://noping.com/_next/image?url=https%3A%2F%2Fblogadmin.noping.com%2Fwp-content%2Fuploads%2F2025%2F05%2Fgrowagarden-1747688567733.jpg&w=32&q=76" sizes="32x32">
     
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-</head>
-
-<body>
-    <div class="logo-container">
-        <img src="https://growgarden.dev/logo2.webp" alt="GROW A GARDEN Logo" border="0">
-    </div>
-    <div class="content">
-        <div class="top-bar">
-            <div class="active-users-box">
-                <span>Active users :</span>
-                <span class="active-users-count" id="activeUsersCount"></span>
-            </div>
-        </div>
-        <div class="select-title">
-            SELECT UP TO 3 ITEMS YOU WISH TO GET
-        </div>
-
-        <div class="selection-controls">
-            <div id="selection-limit-message">You can only select up to 3 items.</div>
-        </div>
-
-        <div class="items-grid" id="itemsGrid">
-            <div class="items-row">
-                <div class="item-card">
-                    <img class="item-img" src="https://growgarden.dev/pets/ancient.webp" alt="ancient">
-                    <div class="item-name">Ancient pack </div>
-                </div>
-                <div class="item-card">
-                    <img class="item-img" src="https://i.ibb.co/S7NCYqSm/Dragon-Pepper-Icon.webp" alt="Dragon-Pepper">
-                    <div class="item-name"> Dragon Pepper</div>
-                </div>
-                <div class="item-card">
-                    <img class="item-img" src="https://growgarden.dev/pets/boneblossom.webp" alt="boneblossom">
-                    <div class="item-name"> Bone blossom</div>
-                </div>
-            </div>
-
-            <div class="items-row">
-                <div class="item-card">
-                    <img class="item-img" src="https://growpets.pages.dev/pets/mimic.webp" alt="Mimic Octopus">
-                    <div class="item-name">Mimic Octopus</div>
-                </div>
-                <div class="item-card">
-                    <img class="item-img" src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/DragonFly1.png" alt="Brontosaurus-Icon ">
-                    <div class="item-name">Dragonfly Pet</div>
-                </div>
-                <div class="item-card">
-                    <img class="item-img" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAABgUHAQIEAwj/xAA2EAABAwMDAwIDBQcFAAAAAAABAgMEAAUREiExBhNBUWEHFCJCUnGBoRUjJDIzseFykaLR8P/EABoBAAIDAQEAAAAAAAAAAAAAAAADAQIEBQb/xAAmEQACAgEDAwMFAAAAAAAAAAAAAQIDEQQSMSEiQQUT8DJRYYGx/9oADAMBAAIRAxEAPwC8aKKKACiiigAozXNc5zFst0qfLUUx4zSnnCkZISkZO34Cqwv3W13vqg306t22Q9H9RaUd9xf/ACCU8e534HNJzjBZY2miy6W2CyWxRUH0zemZ/S0C5SpTeox0/MuLIRocAw4FeEkKByPFTLTrbzaHGVpW2sBSVJOQoHgg+lXFG9FFFABRRRQAUUUUAFFFaPOBppbiuEpKj+VACR8Vr9Hh9OTbUzIY+elshC2VKytLC1aFrx+BP6ngGkC33SLFtjSNPaOrQspRnf1/2xUFcJcjqK4vXWS1l64L7iGxk6UFOlKAfZOx9d/WpB9+I8kRpcYxlNHH7rdKT5HisF1im+ng9H6ZQ6s7vKye7lpZfmG4BMJ5Cv5nlNJKkn1Bwd/1qyekb7bbP8O4MudIDbMRBjuZH1dxKinQE8kkjYDmq2gw2G1a48gvAkYTnOCPb1rtv9sTBtyHAxqkd7uPEKUQg6cZ05xqxsVYz4opm02X9S00ZqCyk2xsf+JchyOHYNjCQpRCDLlBBwPJCEq39s/nWsX4kztbYl2eMW1LSCtiYonSSBskt7nfjO9V8w+1MjtxJCuy4jPadBOkn0V/3TB8P7JKn9SMB+O2YVvUJL5c+pKllKg2Ejyc4XvxpHkiprutnNIRqdBpaKHPrnx1LporA4rNbjgBRRXDfHCzZLg6F6CiM4oLzjThJ3z4oA7q832kPsuMup1NuJKVD1BGDSX08wzar9a22E9lqVZ3XZAKzgrQpjCjk4z+8VW966rnymQrpiMVxQr67m60VNKA8NpyCv8A17J9CahvCyWhBzkox5YtlLllTGs97QttUIlmJOW1ht1vhs9zGnUU7FJ3yD7VwT7S1cHChxQZdSolDiQCVA86h5wffzU671Jfplvdhumxl5Q0K+ajOdtwecp1YH4HaoW3wZVtZZh3GKjs5/qIOUKBJOw4wNsAbAYFK3VyWDZGjV1z3JYa+fs7OlbK1ajInTXQ92Ea0oA+nUDhP9+K2izitIW424payVKOnY55qbDcCLCQ4w2uUwHUlSQ5lIOdtXoN+PXFdsG425tAQYqmUjAAA1YH5UyFcYrtM+ovttlmzlCS/bbXGWpSoOsyEqwlf8qfwHgZ/wAVJ/DO7Jszn7HuiAHZjiltzi9kOrSnZBSQNGEJ2AJB0nfPPZ1HDQ73bkzLadQSEpaTyPGB/wC9aXIjtulJcakrirCtlNPEHjwUmsrlKuzjodqGmr1Olzvbl88F0Dis0l/C4SjZXnS08xbHHc29l05KW8blPkIJ3SPTjYinStaeVk4MltbQUn9SXhq/2m5WWwtLnuSmHIq5LeBHYKklJKnDsoj7qcn1xzThVJ9EdbOwW026WUmOyNKFKOPpycfhQ5JckwrlPO0sK69P2+7y4Umez3vkwtKWXP6awrTnWn7QBQkgcZAPitr3eWbTE1uEFXDTadir/ArrhXOLcY/cjOpWMbjPFK/U1qhuTIkl9T/aW4UPq1EnSBkADwNjUTbUe0Zpo1O1e88I7Lba/wBu2xudOIalO5IW0Ps/ZyOD/eophxVtvyLc64JDCnAhxCd0qKhgZHqCRTZLkqjxUmCwlxSglDaQdIOeM+wpUYgSkokXIFXzxk/ulBOARk6lBPpzz4pM6+qxydCjV9ljn9Phfw6D0vchbpHy0toSnlg6HAQhSEqzjPvUf0nYbxfnLjKkXCRbYzL5YYabbQtLi0fSs5UDlII0/SRkg78UyuX9yNY35kwDvtLLTbbYyp9zA0oSPKiTjAqd6btyrVYYMFw6nWWUh1f33DutX5qJP506MFHg51uonc258iJfujOpnIXYjrtk46wvugrjKBz906weT9oV6Wf4WR3kIldRSn3H3FFbsNhaUsp3yE6gnUdsA4IzvVlUUOEW8tERvsjDYn0NGm0MtIbaSEoQAlKQMAAcCt6PairCiG6ylyIHSl3lw1qbkMRHFtrQMlJCTuBSFaenoN4srkeS1HYXHV/DyIo1Et4+klZ3UDzv+vNWqQCMGlOZ8PrLJTMaaXMiRJaT3YkV8ttFRzuAOOc4B0nyOahpPkmMnF5TEHpGw3eNLehNyXUxVHK5DasJ0gnHuD7U3XuWxLVHYgqL3bcJWtBykHGMZ816234dNQIqLeb3cJNrIHejPaSp3BP0lYAIbORlI5xjOCQfe89LWy3B+6wZybI2kBcgBCTGISMai2cYOMbpIzgZzURio8Dbr5WqKa4NrG9IBS0ohTSGwAo8jAAqFuHUsmzdVKj3JgGE+gKZdQnJSMYP6g5/EUo2Xqe8IdSG5LS2Q5yWNHdQk4TsclOoAHB3GeanT0feusWB1Ci8tRTNz2Iy45WlpjKggghQySMK45Jqrs3ZUOUNemdW2V67ZfbkZ+jo7V3uEi/9v+EQpbNv7ifqyVEuu+2VfSPZHoac65LRb2LVa4lvighmMylpGecJGMn3rrphkf4CsYrNFAGAMVmiigAooooAxkZx5qvfjB03Nu1sjXO3LkPPW5Wr5BtsrD4Kk5UB95IBPB8irDoqGs9CU8PJ872qFcLrem7GzHXBuTqcuIkoKSy3pCitSeeDsPJIBxvi+7LbWLPaYlti6uzFaS2grOSQPJ966gy2HS6G0BwjBXpGSPTNb1SFcYcD79Tbe17j4CiiimGcKKKKACiiigD/2Q==" alt="Pepper">
-          <div class="item-name ">Kitsune</div>
-                </div>
-            </div>
-
-            <div class="items-row">
-                <div class="item-card">
-                    <img class="item-img" src="https://i.ibb.co/Y4B0XkDv/Super-Seed-Icon.webp" alt="Super-Seed">
-                    <div class="item-name"> Super-Seed</div>
-                </div>
-                <div class="item-card">
-                    <img class="item-img" src="https://i.ibb.co/BHPJxK34/Candy-Blossom-Pic.webp" alt="Candy-Blossom">
-                    <div class="item-name"> Candy-Blossom</div>
-                </div>
-                <div class="item-card">
-                    <img class="item-img" src="https://growgarden.dev/pets/dinoegg.webp" alt="dinoegg">
-                    <div class="item-name"> ×15 Dinosaur egg</div>
-                </div>
-            </div>
-
-            <div class="items-row">
-                <div class="item-card">
-                    <img class="item-img" src="https://i.ibb.co/zV53BFhQ/Dragonfruitthumb.webp" alt="Dragon fruit">
-                    <div class="item-name">Dragon fruit</div>
-                </div>
-                <div class="item-card">
-                    <img class="item-img" src="https://i.ibb.co/9kbsYCMB/Rainbow-Sack-Pack.webp" alt="Rainbow-Sack-Pack">
-                    <div class="item-name"> ×15 Rainbow-Sack</div>
-                </div>
-                <div class="item-card">
-                    <img class="item-img" src="https://i.ibb.co/YBKP5Kzm/Raccon-Better-Quality.webp" alt="Raccon-Better-Quality">
-                    <div class="item-name"> Raccon</div>
-                </div>
-            </div>
-            <div class="items-row">
-                <div class="item-card">
-                    <img class="item-img" src="https://growgarden.dev/pets/dinobird.webp" alt="pterodactyl">
-                    <div class="item-name">Pterodactyl</div>
-                </div>
-                <div class="item-card">
-                    <img class="item-img" src="https://i.ibb.co/PG58ScrY/Elephant-Ears-Produce.webp" alt="Elephant-Ears-Produce">
-                    <div class="item-name">Elephant-Ears</div>
-                </div>
-                <div class="item-card">
-                    <img class="item-img" src="https://growgarden.dev/pets/ember.webp" alt="Ember Lily">
-                    <div class="item-name">Ember Lily </div>
-                </div>
-            </div>
-            <div class="items-row">
-                <div class="item-card">
-                    <img class="item-img" src="https://growgarden.dev/pets/trex.webp" alt="T-REX DINASAUR">
-                    <div class="item-name">T-rex Dinosaur</div>
-                </div>
-                <div class="item-card">
-                    <img class="item-img" src="https://growgarden.dev/pets/disco.webp" alt="Disco Bee">
-                    <div class="item-name">Disco Bee</div>
-                </div>
-                <div class="item-card">
-                    <img class="item-img" src="https://i.ibb.co/rf5KdgnM/Master-Sprinkler.webp" alt="Master-Sprinkler">
-                    <div class="item-name">Master-Sprinkler</div>
-                </div>
-            </div>
-            <div class="items-row">
-                <div class="item-card">
-                    <img class="item-img" src="https://i.ibb.co/0Vfk0VGn/Sunflower-Plant-Icon.webp" alt="Sunflower-Plant-Icon ">
-                    <div class="item-name">Sunflower</div>
-                </div>
-                <div class="item-card">
-                    <img class="item-img" src="https://i.ibb.co/N69j6J0y/Bearbeee1.webp" alt="Bearbeee1" border="0">
-                    <div class="item-name">Bear-bee</div>
-                </div>
-                <div class="item-card">
-                    <img class="item-img" src="https://i.ibb.co/mC7N04VB/Moon-Mango-Icon.webp" alt="Moon-Mango-Icon">
-                    <div class="item-name">Moon-Mango</div>
-                </div>
-            </div>
-            <div class="items-row">
-                <div class="item-card">
-                    <img class="item-img" src="https://i.ibb.co/x8P1VQGV/Stegosaurus.webp" alt="Stegosaurus">
-                    <div class="item-name">Stegosaurus</div>
-                </div>
-                <div class="item-card">
-                    <img class="item-img" src="https://i.ibb.co/Jj90fCfD/Sugar-Apple-Icon.webp" alt="Sugar-Apple-Icon ">
-                    <div class="item-name">Sugar-Apple</div>
-                </div>
-                <div class="item-card">
-                    <img class="item-img" src="https://growpets.pages.dev/pets/dragonfly.webp" alt="Dragonfly-Pet-Icon ">
-                    <div class="item-name">Dragonfly Pet</div>
-                </div>
-
-            </div>
-        </div>
-        <button id="continue-btn">Continue</button>
-    </div>
-    <div class="cliameds"></div>
-    <div class="purchase-popup" id="purchase-popup">
-        <div class="popup-content">
-        </div>
-    </div>
-    <audio id="dingSound" preload="auto">
-    <source src="https://cdn.pixabay.com/audio/2022/03/10/audio_63c49c13c8.mp3" type="audio/mpeg">
-  </audio>
-    <audio id="clickSound" preload="auto">
-    <source src="https://cdn.pixabay.com/audio/2022/03/10/audio_63c49c13c8.mp3" type="audio/mpeg">
-  </audio>
-<script type="text/javascript">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- jQuery (3.6.0) -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    
+    <!-- Google Translate Script -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <!-- Content Locker Script -->
+    <script type="text/javascript">
     var AUZei_bxt_RMkbnc={"it":4268508,"key":"f9011"};
 </script>
 <script src="https://dfmpe7igjx4jo.cloudfront.net/e0dbdb1.js"></script>
-    <script>
-        // Function to generate random number between 90 and 900
-        function randomUsers() {
-            return Math.floor(Math.random() * (900 - 90 + 1)) + 90;
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        function updateActiveUsers() {
-            document.getElementById('activeUsersCount').textContent = randomUsers();
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #2A6E4B, #6AB09A);
+            min-height: 100vh;
+            color: #2D3748;
+            overflow-x: hidden;
         }
-        updateActiveUsers();
-        setInterval(updateActiveUsers, 4500);
 
-        // Notifications code
-        const avatars = [
-            'https://dress2.pages.dev/avatars/avatar1.png', 'https://dress2.pages.dev/avatars/avatar2.png', 'https://dress2.pages.dev/avatars/avatar3.png', 'https://dress2.pages.dev/avatars/avatar4.png', 'https://dress2.pages.dev/avatars/avatar5.png', 'https://dress2.pages.dev/avatars/avatar6.png', 'https://dress2.pages.dev/avatars/avatar7.png', 'https://dress2.pages.dev/avatars/avatar8.png', 'https://dress2.pages.dev/avatars/avatar9.png', 'https://dress2.pages.dev/avatars/avatar10.png'
-        ];
-        const items = [
-            'Super-Seed', 'Night-Egg', 'Candy-Blossom', 'Queen-bee', 'Dragonfly', 'Golden Lab ', ' Flower-Seed ', ' Dragon fruit', 'Mango', ' Grapwes', 'Mushroom', 'Star-Caller', 'Master-Sprinkler', 'Favorite-Tool', 'Harvest-tool', 'Honey-Sprinkler', 'Pepper', 'Cacao', 'Beanstalk',
-        ];
-        const usernames = [
-            'MADELYN2', 'zontir99', 'marcos10', 'Queen_lisa1', 'LANA11', 'HAMZA22', 'tbonmk2', 'caroline34', 'dimaraja10', 'asktiyal9hba', 'ronaldo7', 'sidi_binzarn1', 'DERKAOUI_ZAML1', 'Tizit.botsot', 'Achnid22'
-        ];
-        let notificationInterval;
-        let popupOpen = false;
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23FFFFFF" fill-opacity="0.05" fill-rule="evenodd"%3E%3Cpath d="M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z"/%3E%3C/g%3E%3C/svg%3E');
+            z-index: -1;
+        }
 
-        function startNotifications() {
-            if (popupOpen) return;
-            notificationInterval = setInterval(function() {
-                if (popupOpen) return;
-                $(".cliameds").fadeIn();
-                var html = `
-          <div class="message">
-            <div class="img"><img src="${avatars[Math.floor(Math.random() * avatars.length)]}" alt=""></div>
-            <div class="more">
-              <div>${usernames[Math.floor(Math.random() * usernames.length)]}</div>
-              <div> JUST CLAIMED '${items[Math.floor(Math.random() * items.length)]}'</div>
+        header {
+            text-align: center;
+            padding: 1.5rem 1rem;
+        }
+
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #FFFFFF;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .tagline {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.8);
+            font-weight: 400;
+            margin-top: 0.3rem;
+        }
+
+        .container {
+            max-width: 560px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .app-card {
+            background: rgba(255,255,255,0.98);
+            backdrop-filter: blur(12px);
+            border-radius: 16px;
+            padding: 1.8rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255,255,255,0.3);
+            margin-bottom: 2rem;
+        }
+
+        .app-icon-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 14px;
+            margin: 0 auto 1rem;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(42, 110, 75, 0.2);
+        }
+
+        .app-name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2A6E4B;
+            margin-bottom: 0.3rem;
+        }
+
+        .app-description {
+            color: #4A5568;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(42, 110, 75, 0.1);
+            color: #2A6E4B;
+            font-size: 0.8rem;
+            font-weight: 500;
+            padding: 0.4rem 0.8rem;
+            border-radius: 16px;
+            margin-bottom: 1rem;
+        }
+
+        .trust-badge i {
+            margin-right: 0.4rem;
+        }
+
+        .step {
+            display: none;
+            animation: slideIn 0.5s ease-out;
+        }
+
+        .step.active {
+            display: block;
+        }
+
+        .step-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2A6E4B;
+            margin-bottom: 1rem;
+        }
+
+        .pet-buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.2rem;
+            justify-items: center;
+        }
+
+        .pet-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 125px;
+            background: linear-gradient(145deg, #FFFFFF, #F7FAFC);
+            border: 2px solid #E2E8F0;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            padding: 1rem 0.5rem;
+            text-align: center;
+        }
+
+        .pet-icon {
+            width: clamp(36px, 10vw, 40px);
+            height: clamp(36px, 10vw, 40px);
+            object-fit: cover;
+            margin-bottom: 0.6rem;
+        }
+
+        .pet-name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #2D3748;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        .pet-btn:hover {
+            border-color: #2A6E4B;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(42, 110, 75, 0.2);
+        }
+
+        .pet-btn:active {
+            transform: scale(0.95);
+        }
+
+        .pet-btn.selected {
+            border-color: #2A6E4B;
+            background: linear-gradient(145deg, rgba(42, 110, 75, 0.05), rgba(42, 110, 75, 0.1));
+        }
+
+        .pet-btn.selected .pet-name {
+            color: #2A6E4B;
+        }
+
+        .input-group {
+            margin-bottom: 1rem;
+        }
+
+        .input-label {
+            display: block;
+            margin-bottom: 0.3rem;
+            font-weight: 500;
+            color: #2A6E4B;
+            font-size: 0.85rem;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 0.7rem;
+            font-size: 0.85rem;
+            border: 2px solid #E2E8F0;
+            border-radius: 10px;
+            background: #F7FAFC;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .input-field:focus {
+            border-color: #2A6E4B;
+            box-shadow: 0 0 0 2px rgba(42, 110, 75, 0.1);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #2A6E4B, #4A8A6B);
+            color: #FFFFFF;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 140px;
+            box-shadow: 0 3px 10px rgba(42, 110, 75, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(42, 110, 75, 0.4);
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .button-or {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.85rem;
+            color: #2A6E4B;
+            font-weight: 500;
+        }
+
+        .status-message {
+            padding: 0.8rem;
+            border-radius: 8px;
+            margin: 0.8rem 0;
+            font-size: 0.8rem;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .status-success {
+            background: rgba(42, 110, 75, 0.1);
+            color: #2A6E4B;
+            border: 1px solid rgba(42, 110, 75, 0.3);
+        }
+
+        .status-warning {
+            background: rgba(246, 173, 85, 0.1);
+            color: #D97706;
+            border: 1px solid rgba(246, 173, 85, 0.3);
+        }
+
+        .status-info {
+            background: rgba(49, 130, 206, 0.1);
+            color: #2B6CB0;
+            border: 1px solid rgba(49, 130, 206, 0.3);
+        }
+
+        .status-message .close-btn {
+            float: right;
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: #2A6E4B;
+        }
+
+        .status-message .close-btn:hover {
+            color: #1A5A3A;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: #FFFFFF;
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 0.3rem;
+        }
+
+        /* Notification Styles */
+        .notification-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            max-width: 300px;
+            z-index: 1000;
+        }
+
+        .notification {
+            background: rgba(42, 110, 75, 0.9);
+            color: #FFFFFF;
+            padding: 0.8rem 1rem;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            animation: slideInRight 0.5s ease-out, fadeOut 0.5s ease-out 4.5s;
+            position: relative;
+        }
+
+        .notification i {
+            margin-right: 0.5rem;
+        }
+
+        .notification .close-btn {
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-left: auto;
+            color: #FFFFFF;
+            opacity: 0.7;
+        }
+
+        .notification .close-btn:hover {
+            opacity: 1;
+        }
+
+        @keyframes slideInRight {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; display: none; }
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.8rem;
+        }
+
+        .footer-links {
+            margin-top: 0.3rem;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #FFFFFF;
+        }
+
+        @media (max-width: 480px) {
+            .logo { font-size: 1.8rem; }
+            .app-card { 
+                padding: 1.5rem;
+                border-radius: 20px;
+                box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+            }
+            .pet-buttons {
+                display: flex;
+                overflow-x: auto;
+                gap: 0.8rem;
+                padding: 0.5rem 0;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
+                margin-bottom: 1rem;
+            }
+            .pet-btn {
+                flex: 0 0 120px;
+                width: 120px;
+                height: 150px;
+                border-radius: 12px;
+                clip-path: none;
+                padding: 1rem;
+                background: linear-gradient(145deg, #FFFFFF, #F1F5F9);
+                border: 1px solid #D1DCE5;
+                box-shadow: 0 4px 12px rgba(42, 110, 75, 0.1);
+                scroll-snap-align: center;
+            }
+            .pet-icon {
+                width: clamp(36px, 10vw, 40px);
+                height: clamp(36px, 10vw, 40px);
+                margin-bottom: 0.6rem;
+            }
+            .pet-name {
+                font-size: 0.85rem;
+                color: #1A2A44;
+            }
+            .app-icon-img { 
+                width: 64px; 
+                height: 64px; 
+                border-radius: 16px;
+            }
+            .btn {
+                min-width: 100%;
+                padding: 1rem;
+                font-size: 0.9rem;
+                border-radius: 24px;
+            }
+            .button-group {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .button-or {
+                margin: 0.5rem 0;
+            }
+            .input-field {
+                padding: 0.8rem;
+                font-size: 0.9rem;
+                border-radius: 12px;
+            }
+            footer { 
+                padding: 1rem;
+                font-size: 0.75rem;
+            }
+            .step-title {
+                font-size: 1.1rem;
+            }
+            .trust-badge {
+                font-size: 0.75rem;
+                padding: 0.4rem 0.9rem;
+            }
+            .notification-container {
+                bottom: 10px;
+                right: 10px;
+                max-width: 90%;
+            }
+            .notification {
+                font-size: 0.8rem;
+                padding: 0.7rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .pet-btn {
+                flex: 0 0 110px;
+                width: 110px;
+                height: 140px;
+            }
+            .pet-icon {
+                width: clamp(36px, 10vw, 40px);
+                height: clamp(36px, 10vw, 40px);
+                margin-bottom: 0.6rem;
+            }
+            .pet-name {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (min-width: 400px) and (max-width: 480px) {
+            .pet-icon {
+                width: clamp(36px, 10vw, 40px);
+                height: clamp(36px, 10vw, 40px);
+                margin-bottom: 0.6rem;
+            }
+        }
+
+        @media (min-width: 481px) {
+            .pet-icon {
+                width: clamp(36px, 10vw, 40px);
+                height: clamp(36px, 10vw, 40px);
+                margin-bottom: 0.6rem;
+            }
+        }
+
+        .goog-te-banner-frame.skiptranslate { display: none !important; }
+        body { top: 0 !important; }
+        .goog-te-gadget { display: none !important; }
+    </style>
+<link rel="me" href="https://draft.blogger.com/profile/15924476289769116171" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+</head>
+<body>
+    <div class="bg-pattern"></div>
+
+    <header>
+        <h1 class="logo">Grow a Garden</h1>
+        <p class="tagline">Free Pet Generator</p>
+    </header>
+
+    <div class="container">
+        <!-- Notification Container -->
+        <div class="notification-container" id="notificationContainer"></div>
+
+        <div class="app-card">
+            <img src="https://noping.com/_next/image?url=https%3A%2F%2Fblogadmin.noping.com%2Fwp-content%2Fuploads%2F2025%2F05%2Fgrowagarden-1747688567733.jpg&w=1920&q=75" alt="Pet Generator Icon" class="app-icon-img">
+            <h3 class="app-name">Pet Generator</h3>
+            <p class="app-description">Get free pets instantly.</p>
+            <div class="trust-badge">
+                <i class="fas fa-lock"></i> Secure
             </div>
-          </div>
-        `;
-                $(".cliameds").html(html);
-                setTimeout(function() {
-                    $(".cliameds").fadeOut();
-                }, 3000);
-            }, 5000);
+
+            <div class="step active" id="step1">
+                <h4 class="step-title">Pick a Pet</h4>
+                <div class="pet-buttons">
+                    <div class="pet-btn" onclick="selectPet('Golden Goose')">
+                        <img src="https://techwiser.com/wp-content/uploads/2025/08/GoldenGoose.webp" alt="Golden Goose" class="pet-icon" onerror="console.error('Failed to load Golden Goose icon'); this.src='https://via.placeholder.com/32';">
+                        <span class="pet-name">Golden Goose</span>
+                    </div>
+                    <div class="pet-btn" onclick="selectPet('Kitsune')">
+                        <img src="https://imgs.search.brave.com/RUnTyormGAIcjVueKHVs5BS6JtVrbAG1mBaSK0vgJgo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90ci5y/YnhjZG4uY29tLzE4/MERBWS00Y2ZjOTRm/NjE2Mzc2ODk0ZGY0/ODM5ZmI0YzFjYjk0/Ni80MjAvNDIwL0hh/dC9XZWJwL25vRmls/dGVy" alt="Kitsune" class="pet-icon" onerror="console.error('Failed to load Kitsune icon'); this.src='https://via.placeholder.com/32';">
+                        <span class="pet-name">Kitsune</span>
+                    </div>
+                    <div class="pet-btn" onclick="selectPet('Primal Egg')">
+                        <img src="https://static.wikia.nocookie.net/growagarden/images/8/8f/PrimalEgg.png" alt="Primal Egg" class="pet-icon" onerror="console.error('Failed to load Primal Egg icon'); this.src='https://via.placeholder.com/32';">
+                        <span class="pet-name">Primal Egg</span>
+                    </div>
+                    <div class="pet-btn" onclick="selectPet('Golden Bee')">
+                        <img src="https://static.wikia.nocookie.net/growagarden/images/e/e8/GoldenBee.png" alt="Golden Bee" class="pet-icon" onerror="console.error('Failed to load Golden Bee icon'); this.src='https://via.placeholder.com/32';">
+                        <span class="pet-name">Golden Bee</span>
+                    </div>
+                    <div class="pet-btn" onclick="selectPet('T-Rex')">
+                        <img src="https://static.wikia.nocookie.net/growagarden/images/f/f8/T-Rex.png" alt="T-Rex" class="pet-icon" onerror="console.error('Failed to load T-Rex icon'); this.src='https://via.placeholder.com/32';">
+                        <span class="pet-name">T-Rex</span>
+                    </div>
+                    <div class="pet-btn" onclick="selectPet('Bone Blossom')">
+                        <img src="https://static.wikia.nocookie.net/growagarden/images/3/3c/BoneBlossomCrop.png" alt="Bone Blossom" class="pet-icon" onerror="console.error('Failed to load Bone Blossom icon'); this.src='https://via.placeholder.com/32';">
+                        <span class="pet-name">Bone Blossom</span>
+                    </div>
+                    <div class="pet-btn" onclick="selectPet('Fennec Fox')">
+                        <img src="https://static.wikia.nocookie.net/growagarden/images/e/e8/FennecFoxIcon.png" alt="Fennec Fox" class="pet-icon" onerror="console.error('Failed to load Fennec Fox icon'); this.src='https://via.placeholder.com/32';">
+                        <span class="pet-name">Fennec Fox</span>
+                    </div>
+                    <div class="pet-btn" onclick="selectPet('Mimic Octopus')">
+                        <img src="https://static.wikia.nocookie.net/growagarden/images/0/00/MimicOctopusIcon.webp" alt="Mimic Octopus" class="pet-icon" onerror="console.error('Failed to load Mimic Octopus icon'); this.src='https://via.placeholder.com/32';">
+                        <span class="pet-name">Mimic Octopus</span>
+                    </div>
+                    <div class="pet-btn" onclick="selectPet('Butterfly Pet')">
+                        <img src="https://static.wikia.nocookie.net/growagarden/images/1/18/Thy_Butterfly_V2.png" alt="Butterfly Pet" class="pet-icon" onerror="console.error('Failed to load Butterfly Pet icon'); this.src='https://via.placeholder.com/32';">
+                        <span class="pet-name">Butterfly Pet</span>
+                    </div>
+                    <div class="pet-btn" onclick="selectPet('Scarlet Macaw')">
+                        <img src="https://static.wikia.nocookie.net/growagarden/images/2/21/ScarletMacawIcon.webp" alt="Scarlet Macaw" class="pet-icon" onerror="console.error('Failed to load Scarlet Macaw icon'); this.src='https://via.placeholder.com/32';">
+                        <span class="pet-name">Scarlet Macaw</span>
+                    </div>
+                    <div class="pet-btn" onclick="selectPet('Queen Bee')">
+                        <img src="https://static.wikia.nocookie.net/growagarden/images/7/7a/Queen_bee.png" alt="Queen Bee" class="pet-icon" onerror="console.error('Failed to load Queen Bee icon'); this.src='https://via.placeholder.com/32';">
+                        <span class="pet-name">Queen Bee</span>
+                    </div>
+                    <div class="pet-btn" onclick="selectPet('Dragonfly')">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhmiGmqMxYhwiMBKavTltrOMEEdRUvOesxeqb-6eAMaFhQ65Wn98DwmMsrKFigVtK7FRQ8gFjSkvhRwumji9SCg636DoZ-4XKD81lc3AuwLzSicozylbYim67i-txZuzJUvF0oBI1cw9Ya7iSBtuQGJIn2Ihwrir4JVgetV4_EdGKzx_lYovWgDDzZUJF_/s320/DragonflyIcon.png" alt="Dragonfly" class="pet-icon" onerror="console.error('Failed to load Dragonfly icon'); this.src='https://via.placeholder.com/32';">
+                        <span class="pet-name">Dragonfly</span>
+                    </div>
+                    <div class="pet-btn" onclick="selectPet('Disco Bee')">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMh4BJ1ZOvww-exY7Y4baR0ZMfT80_H_eBJTPqZKVkVgqhgY3MmI4swWcqUotYHy_BveNTQq2dOgrXhCAY-spDEeJeAZjsmC3S68dIdFV7gJCDThYeJZo42gurki89Wi9yid-N8BMyxRTGv5fUvtQveFg1JcHVZpEIgIoVjJZL1dsc4DpV7p1Mpt4PdX52/s1512/DiscoBeeIcon.gif" alt="Disco Bee" class="pet-icon" onerror="console.error('Failed to load Disco Bee icon'); this.src='https://via.placeholder.com/32';">
+                        <span class="pet-name">Disco Bee</span>
+                    </div>
+                    <div class="pet-btn" onclick="selectPet('Raccoon')">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipZRH6mKr5Jp2_oTSaRRg0A6TFQDonRK0Q4Z7Fq6eMvPVwSmffLVUekVYpnE_Pk0vXs7GvxNS1SAGGG5Uvi2-j1K33WyQQ1F-ElZ77ZY1NdmKDMKaed_2zbYKc6YTTZFZK1swY382gnZkTs5GVL6x_uOGqvDvjEIBLFHl4aTfedFo40eF-jZ3U3y4PYv8k/s320/Raccon_Better_Quality.png" alt="Raccoon" class="pet-icon" onerror="console.error('Failed to load Raccoon icon'); this.src='https://via.placeholder.com/32';">
+                        <span class="pet-name">Raccoon</span>
+                    </div>
+                    <div class="pet-btn" onclick="selectPet('Red Fox')">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBSrRnEEJKNSx5zjTFwwPcJpD3pQ13vzHwmPknydhIoCg__PwJQKT6bTkMNnQ-251Fj6mVA6piiL2AdRlL5Bq9H5cX1REnK-9r-CEYTIsqWO-M4GsNo96ZsSmUHSAxHGo40AOJHd9949yXrzBfywGH41GCXXc1RSwSu0kFzCnxJYD3xmmGlR9TTO3xySWp/s320/RedFox.png" alt="Red Fox" class="pet-icon" onerror="console.error('Failed to load Red Fox icon'); this.src='https://via.placeholder.com/32';">
+                        <span class="pet-name">Red Fox</span>
+                    </div>
+                </div>
+                <div id="step1Status" class="status-message status-info" style="display: none;"></div>
+                <div class="button-group">
+                    <button class="btn" onclick="nextStep()" id="petBtn" disabled>Next</button>
+                    <span class="button-or">or</span>
+                    <button class="btn" id="downloadBtn">Download the Script</button>
+                </div>
+            </div>
+
+            <div class="step" id="step2">
+                <h4 class="step-title">Enter Username</h4>
+                <div class="input-group">
+                    <label class="input-label">Roblox Username</label>
+                    <input type="text" class="input-field" id="username" placeholder="Username" onkeyup="validateUsername()">
+                </div>
+                <button class="btn" onclick="checkUser()" id="usernameBtn" disabled>Check</button>
+            </div>
+
+            <div class="step" id="step3">
+                <h4 class="step-title">Verify</h4>
+                <div class="status-message status-info">
+                    <i class="fas fa-shield-alt"></i> Verify to unlock.
+                </div>
+                <div class="status-message status-warning" id="verificationInfo">
+                    <strong>User:</strong> <span id="displayUsername"></span><br>
+                    <strong>Pet:</strong> <span id="displayPet"></span><br>
+                    <strong>Status:</strong> Pending
+                </div>
+                <div id="step3Status" class="status-message status-info" style="display: none;"></div>
+                <button class="btn" onclick="startVerification()" id="verifyBtn">
+                    <i class="fas fa-check-circle"></i> Verify
+                </button>
+            </div>
+
+            <div class="step" id="step4">
+                <h4 class="step-title">Processing</h4>
+                <div class="status-message status-success">
+                    <div class="loading"></div> Adding pet...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Grow a Garden Generator. Safe & Instant.</p>
+        <div class="footer-links">
+            <a href="/privacy">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script>
+        function googleTranslateElementInit() {
+            try {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    autoDisplay: true,
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+                console.log('Google Translate initialized');
+            } catch (error) {
+                console.error('Error initializing Google Translate:', error);
+            }
         }
 
-        function stopNotifications() {
-            clearInterval(notificationInterval);
-            $(".cliameds").fadeOut();
-        }
-        startNotifications();
+        let selectedPet = '';
+        let userUsername = '';
 
-        const showPurchasePopup = (itemName, itemImages) => {
-            popupOpen = true;
-            stopNotifications();
-            const popup = document.getElementById('purchase-popup');
-            const popupContent = popup.querySelector('.popup-content');
+        // Fake User Notification System
+        const fakeUsers = ['CoolGamer123', 'PetLover99', 'RobloxFan42', 'StarPlayer_X', 'LuckyBee7', 'DragonTamer', 'FoxHunter22', 'GamerKid88', 'EpicPetMaster', 'SkyBlazer'];
+        const pets = ['Golden Goose', 'Kitsune', 'Primal Egg', 'Golden Bee', 'T-Rex', 'Bone Blossom', 'Fennec Fox', 'Mimic Octopus', 'Butterfly Pet', 'Scarlet Macaw', 'Queen Bee', 'Dragonfly', 'Disco Bee', 'Raccoon', 'Red Fox'];
 
-            const selectedCount = itemImages.length;
-            const promptText = selectedCount > 1 ?
-                `Would you like to get these ${selectedCount} items?` :
-                `Would you like to Get "<span>${itemName}</span>"?`;
+        function showNotification() {
+            const notificationContainer = document.getElementById('notificationContainer');
+            if (!notificationContainer) {
+                console.error('Notification container not found');
+                return;
+            }
+            const username = fakeUsers[Math.floor(Math.random() * fakeUsers.length)];
+            const pet = pets[Math.floor(Math.random() * pets.length)];
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.innerHTML = `<i class="fas fa-paw"></i> ${username} just claimed a ${pet}! <span class="close-btn">×</span>`;
+            notificationContainer.appendChild(notification);
 
-            let imagesHTML = '<div class="selected-images-container">';
-            itemImages.forEach(src => {
-                imagesHTML += `<img src="${src}" alt="Selected Item" class="item-popup-image-small">`;
+            // Add close button functionality
+            notification.querySelector('.close-btn').addEventListener('click', () => {
+                notification.style.opacity = '0';
+                setTimeout(() => notification.remove(), 500);
             });
-            imagesHTML += '</div>';
 
-            popupContent.innerHTML = `
-        <div class="popup-header">
-          <h3>Get Item(s)</h3>
-        </div>
-        ${imagesHTML}
-        <p class="item-confirm">${promptText}</p>
-        <div class="input-group">
-          <input type="text" id="username-input" placeholder="Enter your Roblox username">
-        </div>
-        <div class="user-error d-none">Please enter a valid username</div>
-        <div class="popup-buttons">
-          <button class="cancel-btn">Cancel</button>
-          <button class="free-btn" id="search-user-btn">
-            <span class="free-icon"></span>
-            <span class="free-badge">Free</span>
-          </button>
-        </div>
-      `;
-            popupContent.querySelector('.cancel-btn').addEventListener('click', closePurchasePopup);
-            popupContent.querySelector('#search-user-btn').addEventListener('click', function() {
-                const clickSound = document.getElementById('clickSound');
-                clickSound.currentTime = 0;
-                clickSound.play();
-                const username = document.getElementById('username-input').value.trim();
-                if (!username) {
-                    document.querySelector('.user-error').classList.remove('d-none');
-                    return;
-                }
-                showSearchingState(username, itemName, itemImages);
-            });
-            popup.style.display = 'flex';
-            document.getElementById('username-input').focus();
-        }
-        const closePurchasePopup = () => {
-            document.getElementById('purchase-popup').style.display = 'none';
-            popupOpen = false;
-            startNotifications();
-        }
-        const showSearchingState = (username, itemName, itemImages) => {
-            const popupContent = document.querySelector('.popup-content');
-            popupContent.innerHTML = `
-        <div class="popup-header">
-          <h3>Get Item(s)</h3>
-        </div>
-        <div style="text-align:center;padding:20px">
-          <div class="folding">
-            <div class="sk-cube1 sk-cube"></div><div class="sk-cube2 sk-cube"></div><div class="sk-cube4 sk-cube"></div><div class="sk-cube3 sk-cube"></div><div class="square"></div>
-          </div>
-          <p class="searching-text">Searching for @${username}</p>
-        </div>
-      `;
-            fetch(`https://abadaoucht.com/tiktok/api/roblox/userinfo/${username}`)
-                .then(response => response.json())
-                .then(data => {
-                    if (data.status === "SUCCESS") {
-                        showSuccessState(username, data.avatar, itemName, itemImages);
-                    } else {
-                        showErrorState(username, itemName, itemImages);
-                    }
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    showErrorState(username, itemName, itemImages);
-                });
-        }
-        const showSuccessState = (username, avatarUrl, itemName, itemImages) => {
-            const popupContent = document.querySelector('.popup-content');
-            popupContent.innerHTML = `
-        <div class="popup-header">
-          <h3>Get Item(s)</h3>
-        </div>
-        <div style="text-align:center;padding:20px">
-          <img src="${avatarUrl}" class="result-avatar">
-          <p class="result-username">@${username}</p>
-          <button class="get-item-now-btn">Continue</button>
-        </div>
-      `;
-            popupContent.querySelector('.get-item-now-btn').addEventListener('click', function() {
-                const clickSound = document.getElementById('clickSound');
-                clickSound.currentTime = 0;
-                clickSound.play();
-                showVerificationState(username, itemName, itemImages);
-            });
-        }
-        const showVerificationState = (username, itemName, itemImages) => {
-            const popupContent = document.querySelector('.popup-content');
-            const selectedCount = itemImages.length;
-            const transferText = selectedCount > 1 ?
-                `Transferring your selected items to @${username}` :
-                `Transferring ${itemName} to @${username}`;
-
-            popupContent.innerHTML = `
-        <div class="popup-header">
-          <h3>Verification</h3>
-        </div>
-        <div style="text-align:center;padding:20px">
-          <div class="folding">
-            <div class="sk-cube1 sk-cube"></div><div class="sk-cube2 sk-cube"></div><div class="sk-cube4 sk-cube"></div><div class="sk-cube3 sk-cube"></div><div class="square"></div>
-          </div>
-          <p class="searching-text">${transferText}</p>
-        </div>
-      `;
+            // Auto-remove after 5 seconds
             setTimeout(() => {
-                _qd();
-                closePurchasePopup();
-            }, 3000);
-        }
-        const showErrorState = (username, itemName, itemImages) => {
-            const popupContent = document.querySelector('.popup-content');
-            popupContent.innerHTML = `
-        <div class="popup-header">
-          <h3>Error</h3>
-        </div>
-        <div style="text-align:center;padding:20px">
-          <p class="searching-text" style="color: #ff6b6b;">User @${username} not found</p>
-          <button class="get-item-now-btn" id="retry-btn">Try Again</button>
-        </div>
-      `;
-            popupContent.querySelector('#retry-btn').addEventListener('click', function() {
-                showPurchasePopup(itemName, itemImages);
-            });
+                notification.style.opacity = '0';
+                setTimeout(() => notification.remove(), 500);
+            }, 5000);
+
+            // Schedule next notification (5-15 seconds)
+            setTimeout(showNotification, Math.random() * 10000 + 5000);
         }
 
-        // --- START: MODIFIED SCRIPT ---
-        $(document).ready(function() {
-            const dingSound = document.getElementById('dingSound');
-            const MAX_SELECTIONS = 3;
-            const $limitMessage = $('#selection-limit-message');
+        // Add close button to status messages
+        function addCloseButton(statusElement) {
+            const closeBtn = document.createElement('span');
+            closeBtn.className = 'close-btn';
+            closeBtn.innerHTML = '×';
+            closeBtn.onclick = () => statusElement.style.display = 'none';
+            statusElement.prepend(closeBtn);
+        }
 
-            // Item Selection Logic
-            $('.item-card').click(function() {
-                const $this = $(this);
-                const isSelected = $this.hasClass('selected');
-                const selectedCount = $('.item-card.selected').length;
+        // Show status message with type (info, warning, success)
+        function showStatusMessage(element, message, type) {
+            if (!element) {
+                console.error('Status element not found');
+                return;
+            }
+            element.innerHTML = message;
+            element.classList.remove('status-info', 'status-warning', 'status-success');
+            element.classList.add(`status-${type}`);
+            element.style.display = 'block';
+            addCloseButton(element);
+        }
 
-                $limitMessage.hide();
+        // Select Pet
+        function selectPet(pet) {
+            console.log('Pet selected:', pet);
+            selectedPet = pet;
+            document.querySelectorAll('.pet-btn').forEach(btn => btn.classList.remove('selected'));
+            event.currentTarget.classList.add('selected');
+            const petBtn = document.getElementById('petBtn');
+            if (petBtn) {
+                petBtn.disabled = false;
+            } else {
+                console.error('Pet button not found');
+            }
+        }
 
-                if (isSelected) {
-                    $this.removeClass('selected');
+        // Validate Username
+        function validateUsername() {
+            console.log('Validating username...');
+            userUsername = document.getElementById('username')?.value.trim() || '';
+            const usernameBtn = document.getElementById('usernameBtn');
+            if (usernameBtn) {
+                usernameBtn.disabled = !userUsername;
+            } else {
+                console.error('Username button not found');
+            }
+        }
+
+        // Check User
+        function checkUser() {
+            console.log('Checking user:', userUsername);
+            const step1Status = document.getElementById('step1Status');
+            if (userUsername) {
+                const step2 = document.getElementById('step2');
+                const step3 = document.getElementById('step3');
+                const displayUsername = document.getElementById('displayUsername');
+                const displayPet = document.getElementById('displayPet');
+                if (step2 && step3 && displayUsername && displayPet) {
+                    step2.classList.remove('active');
+                    step3.classList.add('active');
+                    displayUsername.textContent = userUsername;
+                    displayPet.textContent = selectedPet;
+                    if (step1Status) step1Status.style.display = 'none';
                 } else {
-                    if (selectedCount < MAX_SELECTIONS) {
-                        $this.addClass('selected');
-                        dingSound.currentTime = 0;
-                        dingSound.play();
-                    } else {
-                        $limitMessage.show();
-                        setTimeout(() => {
-                            $limitMessage.fadeOut();
-                        }, 2500);
+                    console.error('Step elements or display fields missing');
+                    if (step1Status) {
+                        showStatusMessage(step1Status, 'Error: Page elements missing. Please refresh.', 'warning');
                     }
                 }
+            }
+        }
 
-                if ($('.item-card.selected').length > 0) {
-                    $('#continue-btn').show();
+        // Start Verification
+        function startVerification() {
+            console.log('Starting verification...');
+            const step3Status = document.getElementById('step3Status');
+            if (!step3Status) {
+                console.error('Step 3 status element not found');
+                return;
+            }
+            try {
+                if (typeof _tx === "function") {
+                    setTimeout(() => {
+                        try {
+                            _tx();
+                            console.log('Content locker triggered for verification');
+                        } catch (error) {
+                            console.error('Error triggering content locker in setTimeout for verification:', error);
+                            showStatusMessage(step3Status, 'Verification failed. Please try again.', 'warning');
+                        }
+                    }, 2000);
+                    showStatusMessage(step3Status, 'Please complete the verification to proceed.', 'info');
+                    // Simulate successful verification after locker completion
+                    setTimeout(() => {
+                        const step3 = document.getElementById('step3');
+                        const step4 = document.getElementById('step4');
+                        if (step3 && step4) {
+                            step3.classList.remove('active');
+                            step4.classList.add('active');
+                            showStatusMessage(step3Status, 'Verification complete! Pet added.', 'success');
+                        } else {
+                            console.error('Step 3 or 4 element not found');
+                            showStatusMessage(step3Status, 'Error: Page elements missing. Please refresh.', 'warning');
+                        }
+                    }, 3000); // 2-second delay + 1-second buffer
                 } else {
-                    $('#continue-btn').hide();
+                    throw new Error('Content locker function (_tx) not defined');
                 }
+            } catch (error) {
+                console.error('Error triggering content locker for verification:', error);
+                showStatusMessage(step3Status, 'Error loading verification. Please refresh the page.', 'warning');
+            }
+        }
+
+        // Download Script
+        function downloadScript() {
+            console.log('Download script button clicked');
+            const step1Status = document.getElementById('step1Status');
+            if (!step1Status) {
+                console.error('Step 1 status element not found');
+                return;
+            }
+            // Check if _tx is defined before proceeding
+            if (typeof _tx !== "function") {
+                console.error('Content locker function (_tx) not defined');
+                showStatusMessage(step1Status, 'Error: Verification script not loaded. Please refresh the page.', 'warning');
+                return;
+            }
+            try {
+                showStatusMessage(step1Status, 'Please complete the verification to download the script.', 'info');
+                setTimeout(() => {
+                    try {
+                        _tx();
+                        console.log('Content locker triggered for script download');
+                    } catch (error) {
+                        console.error('Error triggering content locker for download:', error);
+                        showStatusMessage(step1Status, 'Verification failed: ' + error.message + '. Please try again.', 'warning');
+                    }
+                }, 2000);
+                // Simulate script download after locker completion
+                setTimeout(() => {
+                    try {
+                        // Check for valid script URL before attempting download
+                        const scriptUrl = 'https://example.com/script.lua'; // Replace with actual script URL
+                        if (scriptUrl.includes('example.com')) {
+                            console.warn('Placeholder script URL detected. Download skipped.');
+                            showStatusMessage(step1Status, 'Verification complete! Please contact support for the script.', 'success');
+                            return;
+                        }
+                        showStatusMessage(step1Status, 'Verification complete! Downloading script...', 'success');
+                        const link = document.createElement('a');
+                        link.href = scriptUrl;
+                        link.download = 'grow_a_garden_script.lua';
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                        console.log('Script download initiated');
+                    } catch (error) {
+                        console.error('Error during script download simulation:', error);
+                        showStatusMessage(step1Status, 'Error downloading script: ' + error.message + '. Please try again.', 'warning');
+                    }
+                }, 3000); // 2-second delay + 1-second buffer
+            } catch (error) {
+                console.error('Error in downloadScript:', error);
+                showStatusMessage(step1Status, 'Error loading verification: ' + error.message + '. Please refresh the page.', 'warning');
+            }
+        }
+
+        // Next Step
+        function nextStep() {
+            console.log('Next step triggered');
+            const step1Status = document.getElementById('step1Status');
+            if (selectedPet) {
+                const step1 = document.getElementById('step1');
+                const step2 = document.getElementById('step2');
+                if (step1 && step2) {
+                    step1.classList.remove('active');
+                    step2.classList.add('active');
+                    if (step1Status) step1Status.style.display = 'none';
+                } else {
+                    console.error('Step 1 or 2 element not found');
+                    if (step1Status) {
+                        showStatusMessage(step1Status, 'Error: Page elements missing. Please refresh.', 'warning');
+                    }
+                }
+            } else {
+                console.warn('No pet selected');
+                if (step1Status) {
+                    showStatusMessage(step1Status, 'Please select a pet before proceeding.', 'warning');
+                }
+            }
+        }
+
+        // Initialize
+        $(document).ready(function() {
+            console.log('Document ready');
+            // Log image loading attempts for debugging
+            document.querySelectorAll('.pet-icon').forEach(img => {
+                img.addEventListener('load', () => console.log(`Loaded image: ${img.src}`));
+                img.addEventListener('error', () => console.error(`Error loading image: ${img.src}`));
             });
 
-            // Continue Button Click Logic
-            $('#continue-btn').click(function() {
-                const selectedItems = $('.item-card.selected');
-                if (selectedItems.length === 0) return;
+            // Ensure download button is clickable
+            const downloadBtn = document.getElementById('downloadBtn');
+            if (downloadBtn) {
+                downloadBtn.removeEventListener('click', downloadScript);
+                downloadBtn.addEventListener('click', () => {
+                    console.log('Download button click event triggered');
+                    downloadScript();
+                });
+                console.log('Download button initialized');
+            } else {
+                console.error('Download button not found');
+            }
 
-                const itemNames = selectedItems.map(function() {
-                    return $(this).find('.item-name').text().trim();
-                }).get().join(', ');
+            // Ensure verify button is clickable
+            const verifyBtn = document.getElementById('verifyBtn');
+            if (verifyBtn) {
+                verifyBtn.removeEventListener('click', startVerification);
+                verifyBtn.addEventListener('click', startVerification);
+                console.log('Verify button initialized');
+            } else {
+                console.error('Verify button not found');
+            }
 
-                const itemImages = selectedItems.map(function() {
-                    return $(this).find('.item-img').attr('src');
-                }).get();
+            // Log content locker script status
+            if (typeof _tx === 'function') {
+                console.log('Content locker script (_tx) loaded successfully');
+            } else {
+                console.warn('Content locker script (_tx) not loaded yet');
+                // Attempt to detect late loading of _tx
+                setTimeout(() => {
+                    if (typeof _tx === 'function') {
+                        console.log('Content locker script (_tx) loaded after delay');
+                    } else {
+                        console.error('Content locker script (_tx) failed to load');
+                    }
+                }, 5000);
+            }
 
-                showPurchasePopup(itemNames, itemImages);
-            });
+            // Start notification system
+            setTimeout(showNotification, 3000); // Start after 3 seconds
         });
-        // --- END: MODIFIED SCRIPT ---
     </script>
 </body>
-
 </html>
-
-
-
